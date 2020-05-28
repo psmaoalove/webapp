@@ -9,6 +9,6 @@ ENV JAVA_HOME /docker_home/local/jdk18/
 ENV CATALINA_HOME /docker_home/local/tomcat9
 ENV PATH $PATH:$JAVA_HOME/bin:$CATALINA_HOME/bin
 #暴露8082端口
-EXPOSE 8082
+EXPOSE 8080
 #启动时运行tomcat
 CMD ["/docker_home/local/tomcat9/bin/catalina.sh","run"]
